@@ -1,0 +1,20 @@
+***************
+*** 10,17 ****
+  import sys
+  import os
+  import unittest
+  
+- class HALServer:
+  	mAbortRunLoop = False
+  	def __init__(self):
+  		pass
+--- 10,18 ----
+  import sys
+  import os
+  import unittest
++ import threading
+  
++ class HALServer ():
+  	mAbortRunLoop = False
+  	def __init__(self):
+  		pass
